@@ -1,0 +1,17 @@
+#chartdiv2 {
+  width: 600px;
+  height: 250px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: #FFF;
+  border-radius: 10px;
+}
+
+#chartdiv {
+  width: 600px;
+  height: 250px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: #FFF;
+  border-radius: 10px;
+}

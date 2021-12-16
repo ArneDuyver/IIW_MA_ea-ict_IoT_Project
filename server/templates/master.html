@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IoT - {% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+  <link rel="shortcut icon" href="#">
+  <!-- Chart.js javascript sources -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="//cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="//cdn.amcharts.com/lib/5/xy.js"></script>
+  <script src="//cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+</head>
+
+<body>
+  <div class="hero">
+    <nav>
+      <img
+        src="https://play-lh.googleusercontent.com/PeEyqUvKiWvFgW48xKjGqwqaDb8KHXUAE9TERNZNehbe8HztGkaoUDyc4mq8iO4Ka5o"
+        class="logo">
+      <h2 style="margin-left:15px;">IoT Dashboard</h2>
+      <ul>
+        <li><a href="">Subheader 1</a></li>
+        <li><a href="">Subheader 2</a></li>
+      </ul>
+      <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+    </nav>
+    {% block content %}{% endblock %}
+  </div>
+  <script type="text/javascript" src="{{url_for('static', filename='main.js')}}"></script>
+</body>
