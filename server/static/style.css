@@ -1,4 +1,5 @@
 @import "chart.css";
+@import "navbar.css";
 
 html *{
   font-family: "poppins", sans-serif;
@@ -19,74 +20,32 @@ html *{
   padding-right: 5px;
 }
 
-nav {
+
+.row {
   display: flex;
-  align-items: center;
-  padding: 28px 2%;
+  margin-left: -10px;
+  margin-top: -10px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-nav .logo {
-  width: 50px;
-  cursor: pointer;
-  border-radius: 10px;
+.column {
+  float: left;
 }
 
-nav ul {
-  flex: 1;
-  text-align: right;
-}
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 0 20px;
-}
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-}
-button {
-  background: #efefef;
-  height: 30px;
-  width: 60px;
-  border-radius: 60px;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-  transition: background 0.5s;
+.left {
+  width: 55%;
+  padding-left: 16px;
 }
 
-button span {
-  display: block;
-  background: #999;
-  height: 26px;
-  width: 26px;
-  border-radius: 50%;
-  margin-left: -3px;
-  transition: background 0.5s, margin-left 0.5s;
+.middle {
+  width: 20%;
+  padding-left: 0px;
 }
 
-.control .line {
-  width: 250px;
-  height: 4px;
-  background: #fff;
-  margin: 0 20px;
-  border-radius: 2px;
-}
-.control .line span {
-  width: 50%;
-  height: 8px;
-  margin-top: -2px;
-  border-radius: 4px;
-  background: #00986f;
-  display: block;
-}
-.active {
-  background: green;
-}
-.active span {
-  background: #fff;
-  margin-left: 25px;
-}
-.on {
-  opacity: 1;
+.right {
+  width: 25%;
+  padding-left: 124px;
 }

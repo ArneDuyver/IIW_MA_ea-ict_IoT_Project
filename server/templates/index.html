@@ -1,8 +1,29 @@
 {% extends 'master.html' %}
 
-{% block title %}Dashboard{% endblock %}
+{% block subtitle %}Dashboard{% endblock %}
 
-{% block content %}
-<div id="chartdiv2"></div>
-<div id="chartdiv"></div>
+{% block subcontent %}
+<div class="row">
+  <div class="column left">
+    <h3 style="margin-left: 22px">Air quality level</h3>
+    <div id="chartdiv"></div>
+    <div>
+      <button id="error_btn"
+        style="color: white; width: 80px; height: 48px;margin-left: 20px; margin-top: 20px;background-color: red;visibility: hidden;">ERROR
+        DANGER</button>
+    </div>
+  </div>
+  <div class="column middle">
+    <div id="div_manual">
+      <h3 style="margin-left: 64px">Door control</h3>
+      <div id="knob" style="padding-top:64px"></div>
+    </div>
+
+  </div>
+  <div class="column right" style="float:right;">
+    <canvas id="thermometer" width="100" height="400" style="background-color:#FFF; border-radius: 10px;">
+    </canvas>
+  </div>
+</div>
+
 {% endblock %}
